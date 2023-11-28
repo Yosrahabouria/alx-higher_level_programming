@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""program  prints the ASCII alphabet, in lowercase, not followed by a new line"""
 
-for l in range(97, 123):
-    print("{}".format(chr(l)), end="")
+for letter in range(97, 123):
+    print("{}".format(chr(letter)), end="")
