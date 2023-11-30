@@ -7,14 +7,14 @@ if __name__ == "__main__":
         sys.exit (1)
         a = int(sys.argv[1])
         b = int(sys.argv[3])
-        o = int(sys.argv[2])
-        if o == "+":
+        operator = int(sys.argv[2])
+        if operator == "+":
             print("{} + {} = {}".format(a, b, add(a, b)))
-        elif o == "-":
+        elif operator == "-":
             print("{} - {} = {}".format(a, b, sub(a, b)))
-        elif o == "/":
+        elif operator == "/":
             print("{} / {} = {}".format(a, b, div(a, b)))
-        elif o == "*":
+        elif operator == "*":
             print("{} * {} = {}".format(a, b, mul(a, b)))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
