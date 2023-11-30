@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""print the result of each function"""
 from calculator_1 import add, sub, mul, div
+"""print the result of each function"""
 if __name__ == "__main__":
     a = 10
     b = 5
