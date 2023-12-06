@@ -4,10 +4,10 @@ if __name__ == "__main__":
 
     l = len(sys.argv) - 1
     if l == 0:
-        print("0 arguments.")
+        print(f"{l:d} arguments.")
     elif l == 1:
-        print("1 argument:")
+        print(f"{l:d} argument:")
     else:
-        print("{} arguments:".format(1))
+        print(f"{l:d} arguments:")
     for j in range(l):
         print("{}: {}".format(j + 1, sys.argv[j + 1]))
