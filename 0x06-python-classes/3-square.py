@@ -24,5 +24,4 @@ class Square:
 
         Returns: the current square area.
         """
-
         return self.__size ** 2
