@@ -21,7 +21,7 @@ class Square:
         Returns:
         the size of side.
         """
-    
+
         return self.__size
 
     @size.setter
