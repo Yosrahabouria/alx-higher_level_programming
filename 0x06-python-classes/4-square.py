@@ -22,18 +22,17 @@ class Square:
         Returns:
         the size of side.
         """
-
         return (self.__size)
 
     @size.setter
     def size(self, value):
-         """calculate size."""
-         if not isinstance(value, int):
-             raise TypeError("size must be an integer")
-         elif (value < 0):
-             raise ValueError("size must be >= 0")
-         else:
-             self.__size = value
+        """calculate size."""
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif (value < 0):
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
 
     def area(self):
          """calculate of size.
@@ -41,5 +40,4 @@ class Square:
          Returns:
          The size of area.
          """
-         
          return self.__size ** 2
