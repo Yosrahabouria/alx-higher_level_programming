@@ -5,7 +5,6 @@
 class Square:
     """Square Defintion."""
 
-
     def __init__(self, size=0):
         """ Instantiation with optional size.
 
