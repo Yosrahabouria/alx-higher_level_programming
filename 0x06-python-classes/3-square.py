@@ -2,7 +2,6 @@
 """Square Functions"""
 
 
-
 class Square:
     """Square Defintion."""
 
