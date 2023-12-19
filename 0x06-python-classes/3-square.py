@@ -10,7 +10,7 @@ class Square:
         """ Instantiation with optional size.
 
         Args:
-            size:size of square
+            size: size of square
         """
 
         if not isinstance(size, int):
