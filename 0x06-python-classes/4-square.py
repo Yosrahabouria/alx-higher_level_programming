@@ -19,6 +19,7 @@ class Square:
         """
         calculate the size of side.
 
+
         Returns:
         the size of side.
         """
@@ -36,6 +37,7 @@ class Square:
 
     def area(self):
          """calculate of size.
+
 
          Returns:
          The size of area.
