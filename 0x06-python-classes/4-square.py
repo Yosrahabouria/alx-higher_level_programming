@@ -22,7 +22,7 @@ class Square:
         the size of side.
         """
 
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -34,10 +34,11 @@ class Square:
          else:
              self.__size = value
 
-
     def area(self):
          """calculate of size.
 
-         Returns: The size of area.
+         Returns:
+         The size of area.
          """
+         
          return self.__size ** 2
