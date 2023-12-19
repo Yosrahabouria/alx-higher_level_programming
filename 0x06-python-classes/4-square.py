@@ -3,7 +3,7 @@
 
 
 class Square:
-    """Square Modele"""
+    """Square Modele."""
 
     def __init__(self, size=0):
         """Instantiation with optional size.
@@ -13,18 +13,17 @@ class Square:
         """
         self.size = size
 
+     @property
      def size(self):
-         """ calculate the size of side.
+     """ calculate the size of side.
 
-         Return: the size of side.
-         """
-
+     Return: the size of side.
+     """
          return self.__size
 
+     @size.setter
      def size(self, value):
-         """calculate size.
-         """
-
+         """calculate size."""
          if not isinstance(value, int):
              raise TypeError("size must be an integer")
          elif (value < 0):
@@ -32,11 +31,10 @@ class Square:
          else:
              self.__size = value
 
+
     def area(self):
          """calculate of size.
 
          Returns: The size of area.
-
          """
          return self.__size ** 2
-
