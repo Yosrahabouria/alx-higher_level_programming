@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Square function"""
 
-
 class Square:
     """Square Modele."""
 
