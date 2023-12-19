@@ -2,8 +2,9 @@
 """Square Functions"""
 
 
+
 class Square:
-    """Square Defintion"""
+    """Square Defintion."""
 
 
     def __init__(self, size=0):
@@ -25,7 +26,6 @@ class Square:
 
         Returns: the current square area.
         """
-
-        return (self.__size ** 2)
+        return self.__size ** 2
 
 
