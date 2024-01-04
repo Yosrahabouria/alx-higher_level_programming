@@ -55,6 +55,5 @@ class Rectangle:
         if self.__width != 0 and self.__height != 0:
             str1 += "\n".join("#" * self.__width
                     for a in range(self.__height))
-
-            return str1
+        return str1
 
