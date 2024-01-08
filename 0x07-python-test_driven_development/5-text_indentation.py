@@ -7,6 +7,11 @@ def text_indentation(text):
 
     for a in ".,?":
         text = (a + "\n\n").join(
-            [b.strip("") for b in text.split(a)])
+               [b.strip(" ") for b in text.split(a)])
 
     print(text, end="")
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/5-text_indentation.txt")
