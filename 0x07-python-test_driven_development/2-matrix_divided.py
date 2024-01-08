@@ -16,4 +16,4 @@ def matrix_divided(matrix, div):
             if not isinstance(i, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists)" +
                                 "of integers/floats")
-        return ([[round(i /div, 2) for i in r] for r in matrix])
+    return ([[round(i /div, 2) for i in r] for r in matrix])
