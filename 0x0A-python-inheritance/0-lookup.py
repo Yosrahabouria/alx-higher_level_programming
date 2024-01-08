@@ -6,7 +6,7 @@ def lookup(obj):
     """function that returns the list of available.
     Args:
         obj: object of list.
-    
+
     Returns:
         list: list of availables.
     """
