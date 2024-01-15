@@ -4,6 +4,7 @@
 import json
 import csv
 
+
 class Base:
     """Base of classes"""
 
