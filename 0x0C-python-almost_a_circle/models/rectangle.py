@@ -6,13 +6,13 @@ from base import Base
 class Rectangle(Base):
     """Class rectangle"""
 
-    def __init__(self, width, height, pos_x=0, pos_y=0, id=None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         """Initialization"""
         super().__init__(id)
         self.width = width
         self.height = height
-        self.pos_x = pos_x
-        self.pos_y = pos_y
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -45,32 +45,32 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
 
     @property
-    def pos_x(self):
+    def x(self):
         """Return x position"""
-        return self.__pos_x
+        return self.__x
 
-    @pos_x.setter
-    def pos_x(self, value):
+    @x.setter
+    def x(self, value):
         """Set x position with validation"""
         if type(value) == int:
             if value < 0:
                 raise ValueError("x must be >= 0")
-            self.__pos_x = value
+            self.__x = value
         else:
             raise TypeError("x must be an integer")
 
     @property
-    def pos_y(self):
+    def y(self):
         """Return y position"""
-        return self.__pos_y
+        return self.__y
 
-    @pos_y.setter
-    def pos_y(self, value):
+    @y.setter
+    def y(self, value):
         """Set y position with validation"""
         if type(value) == int:
             if value < 0:
                 raise ValueError("y must be >= 0")
-            self.__pos_y = value
+            self.__y = value
         else:
             raise TypeError("y must be an integer")
 
@@ -80,15 +80,15 @@ class Rectangle(Base):
 
     def display(self):
         """Print the Rectangle with '#' characters"""
-        for _ in range(self.__pos_y):
+        for _ in range(self.__y):
             print()
         for _ in range(self.__height):
-            print(' ' * self.__pos_x + '#' * self.__width)
+            print(' ' * self.__x + '#' * self.__width)
 
     def __str__(self):
         """Return a string representation of the class Rectangle instance"""
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
-                                                 self.id, self.pos_x, self.pos_y,
+                                                 self.id, self.x, self.y,
                                                  self.width, self.height)
 
     def update(self, *args, **kwargs):
@@ -102,15 +102,14 @@ class Rectangle(Base):
                 elif i == 2:
                     self.height = arg
                 elif i == 3:
-                    self.pos_x = arg
+                    self.x = arg
                 elif i == 4:
-                    self.pos_y = arg
+                    self.y = arg
         if kwargs is not None and len(args) == 0:
             for key, value in kwargs.items():
                 self.__setattr__(key, value)
 
     def to_dictionary(self):
         """Return dictionary description of the instance of class Rectangle"""
-        keys = ["id", "width", "height", "pos_x", "pos_y"]
+        keys = ["id", "width", "height", "x", "y"]
         return {a: getattr(self, a) for a in keys}
-
