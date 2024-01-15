@@ -4,7 +4,6 @@
 import json
 import csv
 
-
 class Base:
     """Base of classes"""
 
@@ -30,7 +29,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objects):
-        """ json string of list_objects"""
+        """json string of list_objects"""
         filename = cls.__name__ + ".json"
         to_save = []
         if list_objects is None:
@@ -96,9 +95,9 @@ class Base:
                 for obj in list_objects:
                     if str(cls.__name__) == "Rectangle":
                         writer.writerow([obj.identifier, obj.width, obj.height,
-                                         obj.x, obj.y])
+                                         obj.pos_x, obj.pos_y])
                     elif str(cls.__name__) == "Square":
-                        writer.writerow([obj.identifier, obj.size, obj.x, obj.y])
+                        writer.writerow([obj.identifier, obj.size, obj.pos_x, obj.pos_y])
 
     @classmethod
     def load_from_file_csv(cls):
@@ -110,12 +109,12 @@ class Base:
 
                 if str(cls.__name__) == "Rectangle":
                     reader = csv.DictReader(f, fieldnames=['id', 'width',
-                                                           'height', 'x', 'y'])
+                                                           'height', 'pos_x', 'pos_y'])
                 elif str(cls.__name__) == "Square":
                     reader = csv.DictReader(f, fieldnames=['id', 'size',
-                                                           'x', 'y'])
+                                                           'pos_x', 'pos_y'])
                 for row in reader:
-                    row = {x: int(y) for x, y in row.items()}
+                    row = {col: int(val) for col, val in row.items()}
                     temp = cls.create(**row)
                     res.append(temp)
                 return res
