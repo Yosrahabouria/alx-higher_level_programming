@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """definition of the class Base"""
 
-import json
+from json import dumps, loads
 import csv
 
 
