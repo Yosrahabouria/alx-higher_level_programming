@@ -9,14 +9,14 @@ class Base:
 
     __num_objects = 0
 
-    def __init__(self, identifier=None):
+    def __init__(self, id=None):
         """Initialization"""
 
-        if identifier is not None:
-            self.identifier = identifier
+        if id is not None:
+            self.id = id
         else:
             type(self).__num_objects += 1
-            self.identifier = type(self).__num_objects
+            self.id = type(self).__num_objects
 
     @staticmethod
     def to_json_string(list_dicts):
@@ -94,10 +94,10 @@ class Base:
                 writer = csv.writer(f)
                 for obj in list_objects:
                     if str(cls.__name__) == "Rectangle":
-                        writer.writerow([obj.identifier, obj.width, obj.height,
+                        writer.writerow([obj.id, obj.width, obj.height,
                                          obj.pos_x, obj.pos_y])
                     elif str(cls.__name__) == "Square":
-                        writer.writerow([obj.identifier, obj.size, obj.pos_x, obj.pos_y])
+                        writer.writerow([obj.id, obj.size, obj.pos_x, obj.pos_y])
 
     @classmethod
     def load_from_file_csv(cls):
@@ -118,4 +118,3 @@ class Base:
                     temp = cls.create(**row)
                     res.append(temp)
                 return res
-
