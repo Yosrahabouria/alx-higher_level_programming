@@ -10,5 +10,5 @@ SET PASSWORD FOR user_0d_2@localhost = 'user_0d_2_pwd';
 
 /* Giving the user select privileges on your MySQL server */
 GRANT SELECT
- ON hbtn_0d_2.*
+ ON 'hbtn_0d_2'.*
  TO user_0d_2@localhost;
