@@ -1,9 +1,9 @@
 --  creates the MySQL server for user_0d_2 and the database hbtn_0d_2
 /* Crating Database */
-CREATE IF NOT EXISTS hbtn_0d_2;
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
 
 /* creating user */
-CREATE USER IF NOT EXISTS user_0d_2@Llocalhost;
+CREATE USER IF NOT EXISTS user_0d_2@localhost;
 
 /* Setting the password to the user */
 SET PASSWORD FOR user_0d_2 = 'user_0d_2_pwd';
