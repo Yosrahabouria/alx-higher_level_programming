@@ -1,6 +1,6 @@
 -- creates the database hbtn_0d_usa
 /*Creating Database*/
-CREATE IF NOT EXISTS hbtn_0d_usa;
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 /* create the table cities */
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.citis (
 	PRIMARY KEY id,
