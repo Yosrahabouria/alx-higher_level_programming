@@ -1,4 +1,4 @@
--- creates the database hbtn_0d_usa 
+-- creates the database hbtn_0d_usa
 /*Creating Database*/
 CREATE IF NOT EXISTS hbtn_0d_usa;
 /* create the table cities */
