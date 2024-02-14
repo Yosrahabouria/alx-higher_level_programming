@@ -2,7 +2,7 @@
 /*Creating Database*/
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 /* create the table cities */
-CREATE TABLE IF NOT EXISTS hbtn_0d_usa.citis (
+CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities (
 	PRIMARY KEY id,
 	id INT AUTO_INCREMENT,
 	state_id INT NOT NULL
