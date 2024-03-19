@@ -13,7 +13,7 @@ if __name__ == "__main__":
                            format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
     S = sessionmaker(bind=engine)
-    s = Session()
+    s = S()
 
     item = session.query(State).order_by(State.id).first()
     if item is not None:
