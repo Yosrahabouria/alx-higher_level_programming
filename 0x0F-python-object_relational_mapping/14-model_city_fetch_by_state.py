@@ -15,7 +15,7 @@ if __name__ == "__main__":
         pool_pre_ping=True,
     )
     S = sessionmaker(bind=engine)
-    s = Session()
+    s = S()
     result = session.query(City, State).\
         join(State, State.id == City.state_id).all()
     if result:
