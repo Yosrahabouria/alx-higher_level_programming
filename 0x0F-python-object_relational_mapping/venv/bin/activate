@@ -37,7 +37,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv"
+=======
+VIRTUAL_ENV="/root/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv"
+>>>>>>> c2258ce7817ae3b473d9aa841132b9d4b3630f12
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -29,7 +29,11 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv"
+=======
+set -gx VIRTUAL_ENV "/root/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv"
+>>>>>>> c2258ce7817ae3b473d9aa841132b9d4b3630f12
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -8,7 +8,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv"
+=======
+setenv VIRTUAL_ENV "/root/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv"
+>>>>>>> c2258ce7817ae3b473d9aa841132b9d4b3630f12
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv/bin/python3
+=======
+#!/root/alx-higher_level_programming/0x0F-python-object_relational_mapping/venv/bin/python3
+>>>>>>> c2258ce7817ae3b473d9aa841132b9d4b3630f12
 # -*- coding: utf-8 -*-
 import re
 import sys
