@@ -4,9 +4,6 @@
 
 def find_peak(list_of_integers):
     """find peak definition"""
-    if not list_of_integers:
-        return None
-
     l = 0
     r = len(list_of_integers) - 1
 
