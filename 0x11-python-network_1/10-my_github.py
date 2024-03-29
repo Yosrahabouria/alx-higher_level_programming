@@ -4,7 +4,6 @@ import requests
 from requests.auth import HTTPBasicAuth
 import sys
 
-
 if __name__ == '__main__':
     URL = 'https://api.github.com/user'
     rs = requests.get(URL, auth=HTTPBasicAuth(sys.argv[1], sys.argv[2]))
