@@ -3,6 +3,7 @@
 import urllib.request
 import sys
 
+
 if __name__ == '__main__':
     data = 'email=' + sys.argv[2]
     data = data.encode('ascii')
