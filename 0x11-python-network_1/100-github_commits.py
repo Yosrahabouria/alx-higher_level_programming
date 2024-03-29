@@ -4,7 +4,6 @@ challenge"""
 import requests
 import sys
 
-
 if __name__ == '__main__':
     URL = 'https://api.github.com/repos/' + sys.argv[2] + '/' + sys.argv[1] + \
           '/commits'
