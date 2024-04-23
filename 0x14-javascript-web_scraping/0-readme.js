@@ -7,4 +7,4 @@ fs.readFile(file_Path, 'utf8', (er, data) => {
   } else {
     console.log(data);
   }
-};
+});
